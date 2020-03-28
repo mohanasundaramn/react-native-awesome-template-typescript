@@ -9,7 +9,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mohanasundaramn/react-native-awesome-template-typescript"
+    "url": "git+https://github.com/mohanasundaramn/react-native-awesome-template-typescript.git"
   },
   "keywords": [
     "react-native",
@@ -18,6 +18,11 @@
     "template",
     "boilerplate"
   ],
-  "author": "Mohanasundaram N",
-  "license": "MIT"
+  "author": "Mohanasundaram N <mohanasundaram.rk@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohanasundaramn/react-native-awesome-template-typescript/issues"
+  },
+  "homepage": "https://github.com/mohanasundaramn/react-native-awesome-template-typescript#readme",
+  "main": "template.config.js"
 }
