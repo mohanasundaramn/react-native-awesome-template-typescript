@@ -1,8 +1,8 @@
-import React from 'react';
-import * as Animatable from 'react-native-animatable';
-import {NetworkConsumer} from 'react-native-offline';
-import {Text} from 'react-native-paper';
-import styled from 'styled-components/native';
+import React from "react";
+import * as Animatable from "react-native-animatable";
+import { NetworkConsumer } from "react-native-offline";
+import { Text } from "react-native-paper";
+import styled from "styled-components/native";
 
 /**
  * Offline Component display online/offline status at the top
@@ -16,12 +16,11 @@ import styled from 'styled-components/native';
 export const Offline = () => {
   return (
     <NetworkConsumer>
-      {({isConnected}) => {
-        console.log(`isConnected: ${isConnected}`);
+      {({ isConnected }) => {
         return (
           <>
             {isConnected ? (
-              <Animatable.View transition={['opacity']}>
+              <Animatable.View transition={["opacity"]}>
                 <OnlineContainer>
                   <Text>online</Text>
                 </OnlineContainer>
@@ -30,7 +29,8 @@ export const Offline = () => {
               <Animatable.View
                 easing="ease-in-out-sine"
                 animation="slideInDown"
-                direction="alternate">
+                direction="alternate"
+              >
                 <OfflineContainer>
                   <Text>offline</Text>
                 </OfflineContainer>
